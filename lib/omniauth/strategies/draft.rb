@@ -12,8 +12,8 @@ module OmniAuth
       # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-        site : "https://draftin.com",
-        authorize_path : "/oauth/authorize"
+        :site => "https://draftin.com",
+        :authorize_path => "/oauth/authorize"
       }
 
       # These are called after authentication has succeeded. If
