@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = 'omniauth-draft'
-  gem.version = 0.3
+  gem.version = '0.3.3'
   gem.date    = Date.today.to_s
   gem.license = 'MIT'
   gem.summary = "OmniAuth strategy for Draft"
@@ -10,6 +10,6 @@ Gem::Specification.new do |gem|
   gem.email    = 'bsoule@beeminder.com'
   gem.homepage = 'https://github.com/bsoule/omniauth-draft'
 
-  gem.files = ['lib/omniauth-draft.rb', 'lib/omniauth/strategies/draft.rb']
-  gem.require_paths = ['lib']
+  gem.files = `git ls-files`.split("\n") 
+  gem.require_path = 'lib'
 end
